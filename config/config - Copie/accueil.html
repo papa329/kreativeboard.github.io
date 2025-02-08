@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="aprops.html">À Propos</a></li>
+    <li><a href="page.html">Page</a></li>
+    </ul>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af); /* Arrière-plan dynamique */
+            color: #fff;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .carousel {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+        .service-list li {
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .price {
+            color: #e67e22;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nos Services</h1>
+    </div>
+    <div class="carousel">
+        <div><img src="image1.jpg" alt="Image 1"></div>
+        <div><img src="image2.jpg" alt="Image 2"></div>
+        <div><img src="image3.jpg" alt="Image 3"></div>
+    </div>
+    <div class="container">
+        <ul class="service-list">
+            <li>
+                <div class="service-title">YouTube Premium</div>
+                <div class="price">11,99 €/mois</div>
+                <p>Accès sans publicité à YouTube et YouTube Music.</p>
+            </li>
+            <li>
+                <div class="service-title">Tidal</div>
+                <div class="price">9,99 €/mois - 19,99 €/mois</div>
+                <p>Streaming de musique en haute qualité.</p>
+            </li>
+            <li>
+                <div class="service-title">Duolingo</div>
+                <div class="price">6,99 €/mois</div>
+                <p>Apprentissage des langues avec des leçons interactives.</p>
+            </li>
+            <li>
+                <div class="service-title">HBO Max</div>
+                <div class="price">14,99 €/mois</div>
+                <p>Séries TV et films exclusifs HBO.</p>
+            </li>
+            <li>
+                <div class="service-title">Deezer</div>
+                <div class="price">9,99 €/mois</div>
+                <p>Streaming de musique avec playlists personnalisées.</p>
+            </li>
+            <li>
+                <div class="service-title">Cookidoo</div>
+                <div class="price">3,99 €/mois</div>
+                <p>Recettes de cuisine et planification de repas.</p>
+            </li>
+            <li>
+                <div class="service-title">DeepL</div>
+                <div class="price">5,99 €/mois</div>
+                <p>Traductions précises et rapides.</p>
+            </li>
+            <li>
+                <div class="service-title">Autodesk</div>
+                <div class="price">25 €/mois</div>
+                <p>Logiciels de conception et d'ingénierie.</p>
+            </li>
+            <li>
+                <div class="service-title">Gamma</div>
+                <div class="price">4,99 €/mois</div>
+                <p>Plateforme de streaming de jeux vidéo.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>

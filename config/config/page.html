@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KREATIVE BOARD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar-default {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+        }
+
+        .navbar-default .navbar-brand,
+        .navbar-default .navbar-nav > li > a {
+            color: #fff;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-brand:hover {
+            color: #23d5ab;
+        }
+
+        .main-content {
+            padding-top: 70px; /* Pour compenser la navbar fixe */
+            text-align: center;
+        }
+
+        .navbar-toggle {
+            border: 1px solid #fff;
+        }
+
+        .icon-bar {
+            background-color: #fff;
+        }
+
+        /* Style de base pour le titre */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        /* Effet au survol */
+        h1:hover {
+            color: #ff6347; /* Changer la couleur au survol */
+            transform: scale(1.1); /* Agrandir légèrement le titre au survol */
+            /* Taille moyenne des images du carousel */
+            .carousel-inner > .item> img {
+                max-width: 300px;
+                max-height: 200px;
+                width: auto;
+                height: auto;
+                margin: 0 auto;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="Show All" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.php" class="navbar-brand">KREATIVE BOARD</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">ACCUEIL</a></li>
+                        <li><a href="aprops.html">A PROPOS</a></li>
+                        <li><a href="Services.html">SERVICES</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="netflix.php">NETFLIX</a></li>
+                        <li><a href="amazon.php">AMAZON PRIME</a></li>
+                        <li><a href="disney.php">DISNEY PLUS</a></li>
+                        <li><a href="maul.php">HULU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h1>WELCOME TO KREATIVE BOARD</h1>
+        <p>Découvrez nos services et profitez de notre contenu exclusif.</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </script>
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicateurs -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+
+        </ol>
+    
+        <!-- Wrapper pour les diapositives -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://files.spoilertv.com/headers/Goosebumps-The-Vanishing.jpg" alt="Film 1" class="img-responsive">
+            </div>
+    
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/loki.jpg" alt="Film 2" class="img-responsive">
+            </div>
+    
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/alice-in-borderland.jpg" alt="Film 3" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/Paradise.jpg" alt="film 4" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/dark-matter-appletv.jpg" alt="flim 5" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/American-Primeval.jpg" alt="film 7" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="https://files.spoilertv.com/headers/Beauty-in-Black.jpg" alt="film 8" class="img-responsive">
+           </div>
+                <div class="item">
+                    <img src="https://files.spoilertv.com/headers/3-body-problem.jpg" alt="film 9" class="img-responsive">
+                </div>
+
+        </div>
+    
+        <!-- Contrôles -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+
+    
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #message {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+ <title>Abonnement Streaming</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #add8ed;
+            }
+            .header {
+                background-color: #333;
+                color: #100101;
+                padding: 1rem;
+                text-align: center;
+                text-decoration-color: #000;
+            }
+            .container {
+                padding: 2rem;
+            }
+            .service {
+                background-color: #000;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .service h2 {
+                margin-top: 0;
+            }
+            .netflix-titre {
+                color: #000;/*couleur noire*/
+            font-weight: bold;/*gras*/
+            }
+            .price {
+                color: #e67e22;
+                font-size: 1.5rem;
+            }
+            .payment-methods {
+                margin-top: 1rem;
+                font-size: 0.9rem;
+            }
+            .link-button {
+                        display: inline-block;
+                        padding: 15px 30px; /* Augmenter le rembourrage */
+                        background-color: #007bff;
+                        color: #fff;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        text-align: center;
+                        font-size: 1.5rem; /* Augmenter la taille de la police */
+                        width: 200px; /* Définir une largeur fixe */
+                    }
+                    .link-button:hover {
+                        background-color: #0056b3;
+                    }
+        </style>
+        <div class="header">
+            <h1>Abonnement aux Services de Streaming</h1>
+        </div>
+        <div class="container">
+            <div class="service">
+                <h2>Netflix</h2>
+                <p class="price">$1/jour - $3,99/mois</p>
+                <p>Des films et des séries TV à volonté.</p>
+                <div class="payment-methods">
+                    <strong>Types de paiement acceptés :</strong> Moncash, PayPal, Natcash
+                </div>
+            </div>
+            <div class="service">
+                <h2>Disney+</h2>
+                <p class="price">$1/jour - $3,99/ans</p>
+                <p>Des films et des séries Disney, Pixar, Marvel, Star Wars, et National Geographic.</p>
+                <div class="payment-methods">
+                    <strong>Types de paiement acceptés :</strong> Moncash, Natcash, PayPal
+                </div>
+            </div>
+            <div class="service">
+                <h2>Amazon Prime Video</h2>
+                <p class="price">$0.50/jour - $2.99/ans</p>
+                <p>Films et séries TV, y compris les productions Amazon Original.</p>
+                <div class="payment-methods">
+                    <strong>Types de paiement acceptés :</strong> Moncash, Natcash, Amazon Pay
+                </div>
+            </div>
+            <div class="service">
+                <h2>Hulu</h2>
+                <p class="price">$1/jour - $5/mois</p>
+                <p>Films et séries TV, y compris les productions Hulu Originals.</p>
+                <div class="payment-methods">
+                    <strong>Types de paiement acceptés :</strong> Moncash, Natcash, PayPal
+                </div>
+            </div>
+            <div class="service">
+                <h2>Apple TV+</h2>
+                <p class="price">$2.99/mois</p>
+                <p>Films et séries TV, y compris les productions Apple Originals.</p>
+                <div class="payment-methods">
+                    <strong>Types de paiement acceptés :</strong> Moncash, Apple Pay, Natcash
+                </div>
+            </div>
+        </div>
+    </body>
+    <h1>Inscription</h1>
+    <form id="registerForm">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <a href="https://wa.me/19542356372" target="blank" class="link-button">s'inscrire</a>
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (username && email && password) {
+                document.getElementById('message').innerText = "Inscription réussie !";
+                document.getElementById('message').style.color = "green";
+            } else {
+                document.getElementById('message').innerText = "Veuillez remplir tous les champs.";
+                document.getElementById('message').style.color = "red";
+            }
+        });
+    </script>
+
+
+@2025 All copy rightS reseved by Thony Stark 
+</body>
+</html>

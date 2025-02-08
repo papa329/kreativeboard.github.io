@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À Propos</title>
+    <!-- Intégration de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Feuille de style CSS -->
+    <style>
+        <ul>
+            <li><a href="page.html">Accueil</a></li>
+            <li><a href="aprops.html">À Propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        /* Reset des marges et paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        /* En-tête avec image de fond */
+        header {
+            background-image:none
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Pseudo-élément pour l'effet de superposition */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    background-color: rgba(47, 0, 112, 0.64); /* Exemples de nuances de mauve pâle */
+}
+
+        /* Contenu de l'en-tête */
+        .header-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .header-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .header-content p {
+            font-size: 1.2em;
+            max-width: 600px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Animation des titres */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation des paragraphes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section "À propos" */
+        section {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about-text {
+            flex: 1 1 500px;
+            padding: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6C63FF;
+            position: relative;
+        }
+
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: #6C63FF;
+            left: 0;
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-text a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #6C63FF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .about-text a:hover {
+            background-color: #574b90;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            padding: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Animation de l'image */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column-reverse;
+            }
+
+            .header-content h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="header-content">
+            <h2>Qui suis-je?</h2>
+            <p><strong>decouvrez je suis et ce que je fais</strong></p>
+
+
+            <div class="headder-image">
+                <img src="https://itsrightforyou.com/wp-content/uploads/2020/07/streaming-services-hero-1.png"  width="1000"height="600" alt="Image d'en-tête">
+            </div>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>À Propos de Moi</h2>
+                <p>
+                    Passionné par <strong>la technologie depuis mon adolecence</strong>, je suis entrepreneur numerique ,<strong></strong>technicien multimedia <strong> et Web developeur</strong>, j'ai travaillé sur des projets tels que <strong>Charsital-Art Productions and Marketing, KayKode Ayiti et RichcoinXchange</strong>.
+                </p>
+                <p>
+                    Mon objectif avec ce site <strong>est de facilite l'abonnement streaming a un prix abordable</strong>. Je crois fermement que<strong>ce site vous serait profitable</strong>.
+                </p>
+                <a href="https://wa.me/19542356372">Contactez-moi</a>
+            </div>
+            <div class="about-image">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGDvQI7fyMNpw/profile-displayphoto-shrink_200_200/B4EZTeBzbPGgAY-/0/1738891803696?e=2147483647&v=beta&t=ZcA9meN1ZhpdEiGohOVFqdtiF3cvKx9DHWz-QRBTmes" alt="Image à propos de moi">
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts JavaScript (s'il y a lieu d'ajouter des interactivités) -->
+    <script>
+        // Fonction pour détecter quand les éléments sont visibles
+        function reveal() {
+            var reveals = document.querySelectorAll('.fade-in');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('visible');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', reveal);
+
+        // Appel initial pour afficher les éléments au chargement
+        reveal();
+    </script>
+<h>@2025 All copy rights reseved by Thony Stark.</h>
+</body>
+</html>
